@@ -17,11 +17,11 @@ public class ReverseLinkedList {
 
     }
 
-    public ListNode reverseList(ListNode head){
+    public ListNode reverseList(ListNode head) {
 
-        if(head == null){
+        if (head == null) {
             return null;
-        }else if(head.next == null){
+        } else if (head.next == null) {
             return head;
         }
 
@@ -29,7 +29,7 @@ public class ReverseLinkedList {
         ListNode temp = head;
         ListNode next = null;
 
-        while (temp != null){
+        while (temp != null) {
             next = temp.next;
             temp.next = newHead.next;
             newHead.next = temp;
