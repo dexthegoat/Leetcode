@@ -15,7 +15,7 @@ public class ContainsDuplicate {
         for (int i=0; i<nums.length; i++){
             int temp = nums[i];
             for (int j=1; j<nums.length; j++){
-                if (i == j) break;
+                if (i == j) break;// 增加性能 很叼的一行代码
                 if(temp == nums[j]) return true;
             }
         }
