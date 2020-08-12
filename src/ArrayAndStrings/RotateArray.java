@@ -1,5 +1,7 @@
 package ArrayAndStrings;
 
+import java.util.Arrays;
+
 /**
  * Input: [1,2,3,4,5,6,7] and k = 3
  * Output: [5,6,7,1,2,3,4]
@@ -11,6 +13,10 @@ package ArrayAndStrings;
 public class RotateArray {
 
     public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println(Arrays.toString(arr));
+        new RotateArray().rotate(arr, 4);
+        System.out.println(Arrays.toString(arr));
 
     }
 
