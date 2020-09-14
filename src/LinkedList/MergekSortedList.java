@@ -52,7 +52,8 @@ public class MergekSortedList {
 
         if (lists == null || lists.length == 0) return null;
         PriorityQueue<ListNode> queue = new PriorityQueue<>(lists.length,
-                (o1, o2) -> Integer.compare(o1.val, o2.val));
+                (o1, o2) -> o1.val - o2.val);
+        // 升序o1.val - o2.val 降序o2.val - o1.val
 
         ListNode foo = new ListNode(0);
         ListNode tail = foo;
