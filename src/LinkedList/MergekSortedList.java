@@ -58,9 +58,8 @@ public class MergekSortedList {
         ListNode foo = new ListNode(0);
         ListNode tail = foo;
 
-        for (ListNode node : lists) {
-            if (node != null) queue.add(node);
-        }
+        for (ListNode node : lists) if (node != null) queue.add(node);
+
 
         while (!queue.isEmpty()) {
             tail.next = queue.poll();
