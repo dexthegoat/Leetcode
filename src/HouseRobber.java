@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 public class HouseRobber {
 
     public static void main(String[] args) {
@@ -7,7 +5,7 @@ public class HouseRobber {
         System.out.println(new HouseRobber().rob(house));
     }
 
-    public int rob(@NotNull int[] nums) {
+    public int rob(int[] nums) {
         int curMax = 0;
         int prevMax = 0;
         for (int x : nums) {
