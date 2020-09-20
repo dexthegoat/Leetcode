@@ -28,12 +28,12 @@ import java.util.List;
 public class WordBreak {
 
     public static void main(String[] args) {
-        String s = "leetcode";
+        String s = "applepenapple";
         // substring [a,b)
         System.out.println(s.substring(4, 8));
         List<String> wordDict = new ArrayList<>();
-        wordDict.add("leet");
-        wordDict.add("code");
+        wordDict.add("apple");
+        wordDict.add("pen");
         System.out.println(new WordBreak().wordBreak(s, wordDict));
     }
 
